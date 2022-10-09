@@ -91,6 +91,17 @@ class resume : AppCompatActivity() {
                 R.id.info -> {
                     // Handle favorite icon press
                     supportFragmentManager.beginTransaction().apply {
+
+
+                        val mBundle = Bundle()
+                        mBundle.putString("name",name)
+                        mBundle.putString("age",age)
+                        mBundle.putString("mail",mail)
+                        mBundle.putString("gender",gender)
+
+                        resFragment.arguments=mBundle
+
+
                         replace(R.id.flFragment, resFragment)
                         commit()
 
