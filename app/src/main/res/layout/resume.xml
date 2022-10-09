@@ -1,116 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
-    android:background="@drawable/background_border"
-    tools:context=".resume"><![CDATA[>
+    android:background="@drawable/background_border">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar"
+
+            app:title="Curriculum Vitae" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
 
+    <!-- Scrollable content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".resume">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="117dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/android_fly" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Android"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="android@esprit.tn"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <Button
+                android:id="@+id/skillsBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="SKILLS" />
+
+            <Button
+                android:id="@+id/hobbiesBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text=" HOBBIES" />
+
+            <Button
+                android:id="@+id/languageBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="LANGUAGE" />
+        </LinearLayout>
 
 
+        <FrameLayout
+            android:id="@+id/flFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="1.0"
+         />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+    <!-- Note: A RecyclerView can also be used -->
 
 
-
-
-
-
-
-    ]]>
-
-    <TextView
-        android:id="@+id/hobbies"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="Hobbies:"
-        app:layout_constraintEnd_toEndOf="@+id/Langues"
-        app:layout_constraintStart_toStartOf="@+id/Langues"
-        app:layout_constraintTop_toBottomOf="@+id/Langues" />
-
-    <TextView
-        android:id="@+id/Langues"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="Languages:"
-        app:layout_constraintEnd_toEndOf="@+id/flutterSkill"
-        app:layout_constraintStart_toStartOf="@+id/flutterSkill"
-        app:layout_constraintTop_toBottomOf="@+id/flutterSkill" />
-
-    <TextView
-        android:id="@+id/iosSkill"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="IosSkill:"
-        app:layout_constraintEnd_toEndOf="@+id/androidSkill"
-        app:layout_constraintStart_toStartOf="@+id/androidSkill"
-        app:layout_constraintTop_toBottomOf="@+id/androidSkill" />
-
-    <TextView
-        android:id="@+id/flutterSkill"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="FlutterSkill:"
-        app:layout_constraintEnd_toEndOf="@+id/iosSkill"
-        app:layout_constraintStart_toStartOf="@+id/iosSkill"
-        app:layout_constraintTop_toBottomOf="@+id/iosSkill" />
-
-    <TextView
-        android:id="@+id/androidSkill"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="AndroidSkill:"
-        app:layout_constraintEnd_toEndOf="@+id/gender"
-        app:layout_constraintStart_toStartOf="@+id/gender"
-        app:layout_constraintTop_toBottomOf="@+id/gender" />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Name:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/gender"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="Gender:"
-        app:layout_constraintEnd_toEndOf="@+id/age"
-        app:layout_constraintStart_toStartOf="@+id/age"
-        app:layout_constraintTop_toBottomOf="@+id/age" />
-
-    <TextView
-        android:id="@+id/age"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="Age"
-        app:layout_constraintEnd_toEndOf="@+id/mail"
-        app:layout_constraintStart_toStartOf="@+id/mail"
-        app:layout_constraintTop_toBottomOf="@+id/mail" />
-
-    <TextView
-        android:id="@+id/mail"
-        android:layout_width="363dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="32dp"
-        android:text="Email:"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

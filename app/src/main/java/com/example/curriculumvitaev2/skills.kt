@@ -71,18 +71,22 @@ class skills : AppCompatActivity() {
 
             else -> "None"
         }
+
+
+
             Myintent.putExtra("Name", name)
             Myintent.putExtra("Age", age)
             Myintent.putExtra("Email", mail)
             Myintent.putExtra("Gender", gender)
-            Myintent.putExtra("Android", androidSB.progress.toString())
-            Myintent.putExtra("iOS", iosSB.progress.toString())
-            Myintent.putExtra("Flutter", flutterSB.progress.toString())
+            Myintent.putExtra("Android", androidSB.progress)
+            Myintent.putExtra("iOS", iosSB.progress)
+            Myintent.putExtra("Flutter", flutterSB.progress)
             Myintent.putExtra("Language", langue)
             Myintent.putExtra("Hobbies", hobbies)
 
             startActivity(Myintent)
         }
+
 
     }
     }

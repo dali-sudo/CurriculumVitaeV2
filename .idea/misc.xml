@@ -4,14 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26" />
-        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_main.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_resume.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_skills.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_skills2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_splash_screen.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/resume.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_hobbies.xml" value="0.33" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_r_resume.xml" value="0.360054347826087" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_skills.xml" value="0.360054347826087" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/resume.xml" value="0.24031007751937986" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/skills.xml" value="0.25770308123249297" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/splashscreen.xml" value="0.27049180327868855" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/menu/top_app_bar.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
