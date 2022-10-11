@@ -30,13 +30,27 @@ class HobbiesFragment : Fragment(R.layout.fragment_hobbies) {
 
         // Sets the derived data (type String) in the TextView
        when (hoby) {
-           "Music"  -> music.isChecked
-           "Sport"  -> sport.isChecked
-           "Games"  -> games.isChecked
-           "Music Sport Games" -> music.isChecked &&  sport.isChecked && games.isChecked
-           "Sport Games" ->  sport.isChecked && games.isChecked
-           "Sport Music" ->  sport.isChecked && music.isChecked
-           "Games Music " ->  games.isChecked && music.isChecked
+           "Music"  -> music.setChecked(true)
+           "Sport"  -> sport.setChecked(true)
+           "Games"  -> games.setChecked(true)
+           "Music Sport Games" -> {
+               music.setChecked(true)
+               sport.setChecked(true);
+               games.setChecked(true);
+           }
+
+           "Sport Games" -> {
+               sport.setChecked(true)
+               games.setChecked(true)
+           }
+           "Sport Music" ->  {
+               sport.setChecked(true)
+                      music.setChecked(true)
+           }
+           "Games Music " ->  {
+               games.setChecked(true)
+               music.setChecked(true)
+           }
        }
 
 
