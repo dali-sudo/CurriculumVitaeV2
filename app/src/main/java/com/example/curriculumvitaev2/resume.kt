@@ -1,5 +1,6 @@
 package com.example.curriculumvitaev2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -10,6 +11,7 @@ import com.google.android.material.appbar.MaterialToolbar
 
 lateinit var skillsButton: Button
 lateinit var hobbiesButton: Button
+lateinit var careerBut: Button
 lateinit var toolbar: MaterialToolbar
 class resume : AppCompatActivity() {
    var skillsFragment =  SkillsFragment()
@@ -20,7 +22,7 @@ class resume : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.resume)
 
-
+        careerBut= findViewById<Button>(R.id.CareerButton)
         skillsButton= findViewById<Button>(R.id.skillsBut)
         hobbiesButton= findViewById<Button>(R.id.hobbiesBut)
         toolbar = findViewById<MaterialToolbar>(R.id.topAppBar)
@@ -40,6 +42,13 @@ class resume : AppCompatActivity() {
 
 
 
+        careerBut.setOnClickListener {
+
+            val intent = Intent(this, Career::class.java)
+            startActivity(intent)
+
+
+        }
 
         supportFragmentManager.beginTransaction().apply {
             val mBundle = Bundle()

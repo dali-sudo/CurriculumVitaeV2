@@ -91,32 +91,32 @@ class MainActivity : AppCompatActivity() {
 }
 fun valid():Boolean
 {  var x=0;
-    if ( name!!.text.isEmpty() )
+    if ( name.text.isEmpty() )
 
     {
-        Oname?.error = " Must be not Empty !!"
+        Oname.error = " Must be not Empty !!"
 
     }
     else {
         x++
-        Oname?.error = null
+        Oname.error = null
     };
 
-    if (email!!.text.isEmpty())
+    if (email.text.isEmpty())
     {
-        Oemail?.error = " Must be not Empty !!"
+        Oemail.error = " Must be not Empty !!"
 
     }
-    else if (!EMAIL_ADDRESS.matcher(email?.text!!).matches())
+    else if (!EMAIL_ADDRESS.matcher(email.text!!).matches())
 
     {
-        Oemail?.error = " Check your Email format !!"
+        Oemail.error = " Check your Email format !!"
 
     }
 
     else {
         x++
-        Oemail?.error = null
+        Oemail.error = null
     };
 
 
