@@ -7,6 +7,21 @@
         android:icon="@drawable/ic_baseline_info_24"
         android:title="info"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/Logout"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="logout"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/AddEduItem"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Add University"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/AddCompItem"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Add Company"
+        app:showAsAction="never" />
 
 
 </menu>

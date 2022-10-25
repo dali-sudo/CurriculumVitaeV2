@@ -12,7 +12,7 @@ class splashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splashscreen)
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, skills::class.java))
             finish()
         }, SPLASH_TIME_OUT)
     }

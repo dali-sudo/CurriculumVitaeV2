@@ -9,246 +9,257 @@
     tools:layout_editor_absoluteY="336dp"
     tools:context=".skills">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-  android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:id="@+id/skills_layout"
-        android:layout_width="384dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/background_border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="170dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="SKILLS"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/textView"
-            android:layout_marginStart="16dp"
+            android:id="@+id/skills_layout"
+            android:layout_width="384dp"
+            android:layout_height="155dp"
             android:layout_marginTop="16dp"
+            android:background="@drawable/background_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="SKILLS"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Android"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/androidSeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:max="100"
+                    android:progressTint="@color/colorPrimary"
+                    android:thumbTint="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="iOS"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/ios_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/androidSeekbar"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="16dp"
+                    android:max="100"
+                    android:progressTint="@color/colorPrimary"
+                    android:thumbTint="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView3"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Flutter"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/flutterSeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ios_seekbar"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="16dp"
+                    android:max="100"
+                    android:progressTint="@color/colorPrimary"
+                    android:thumbTint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/language_layout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp">
+            android:background="@drawable/background_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skills_layout">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Android"
-                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:text="Language"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold" />
 
-            <SeekBar
-                android:id="@+id/androidSeekbar"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="64dp"
-                android:max="100"
-                android:progressTint="@color/colorPrimary"
-                android:thumbTint="@color/colorPrimary" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView2"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textView5"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:text="iOS"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp">
 
-            <SeekBar
-                android:id="@+id/ios_seekbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/androidSeekbar"
-                android:layout_marginStart="64dp"
-                android:layout_marginTop="16dp"
-                android:max="100"
-                android:progressTint="@color/colorPrimary"
-                android:thumbTint="@color/colorPrimary" />
+                <CheckBox
+                    android:id="@+id/arabicCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorSecondary"
+                    android:checked="false"
+                    android:text="Arabic"
+                    android:textColor="@color/colorPrimary" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView3"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:text="Flutter"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/frenchCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:buttonTint="@color/colorSecondary"
+                    android:text="French"
+                    android:textColor="@color/colorPrimary" />
 
-            <SeekBar
-                android:id="@+id/flutterSeekbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/ios_seekbar"
-                android:layout_marginStart="64dp"
-                android:layout_marginTop="16dp"
-                android:max="100"
-                android:progressTint="@color/colorPrimary"
-                android:thumbTint="@color/colorPrimary" />
+                <CheckBox
+                    android:id="@+id/englishCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:buttonTint="@color/colorSecondary"
+                    android:text="English"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
 
         </RelativeLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/language_layout"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/background_border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skills_layout">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginTop="8dp"
-            android:gravity="start"
-            android:text="Language"
-            android:textAlignment="viewStart"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold" />
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/textView5"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp">
+            android:id="@+id/Hobbies_layout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/language_layout">
 
-            <CheckBox
-                android:id="@+id/arabicCheckbox"
+            <TextView
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/colorSecondary"
-                android:checked="false"
-                android:text="Arabic"
-                android:textColor="@color/colorPrimary" />
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="8dp"
+                android:text="Hobbies"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/frenchCheckbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:buttonTint="@color/colorSecondary"
-                android:text="French"
-                android:textColor="@color/colorPrimary" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textView6"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp">
 
-            <CheckBox
-                android:id="@+id/englishCheckbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerHorizontal="true"
-                android:buttonTint="@color/colorSecondary"
-                android:text="English"
-                android:textColor="@color/colorPrimary" />
+                <CheckBox
+                    android:id="@+id/musicCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:buttonTint="@color/colorSecondary"
+                    android:text="Music"
+                    android:textColor="@color/colorPrimary" />
+
+                <CheckBox
+                    android:id="@+id/sportCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:buttonTint="@color/colorSecondary"
+                    android:text="Sport"
+                    android:textColor="@color/colorPrimary" />
+
+                <CheckBox
+                    android:id="@+id/gameCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/sportCheckbox"
+                    android:layout_alignParentEnd="true"
+                    android:buttonTint="@color/colorSecondary"
+                    android:text="Games"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
         </RelativeLayout>
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/SUBMIT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginEnd="16dp"
+            android:text="SUBMIT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Hobbies_layout"
+            app:layout_constraintVertical_bias="0.632" />
 
-    <RelativeLayout
-        android:id="@+id/Hobbies_layout"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/background_border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/language_layout">
-
-        <TextView
-            android:id="@+id/textView6"
+        <CheckBox
+            android:id="@+id/rememberMeCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginTop="8dp"
-            android:text="Hobbies"
-            android:textAlignment="viewStart"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold" />
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Remember Me"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Hobbies_layout" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/textView6"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp">
-
-            <CheckBox
-                android:id="@+id/musicCheckbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="false"
-                android:buttonTint="@color/colorSecondary"
-                android:text="Music"
-                android:textColor="@color/colorPrimary" />
-
-            <CheckBox
-                android:id="@+id/sportCheckbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:buttonTint="@color/colorSecondary"
-                android:text="Sport"
-                android:textColor="@color/colorPrimary" />
-
-            <CheckBox
-                android:id="@+id/gameCheckbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/sportCheckbox"
-                android:layout_alignParentEnd="true"
-                android:buttonTint="@color/colorSecondary"
-                android:text="Games"
-                android:textColor="@color/colorPrimary" />
-        </RelativeLayout>
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/SUBMIT"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="-100dp"
-        android:layout_marginEnd="16dp"
-        android:text="SUBMIT"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Hobbies_layout"
-        app:layout_constraintVertical_bias="0.632" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

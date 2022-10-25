@@ -1,12 +1,17 @@
 package com.example.curriculumvitaev2
 
+import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.TextKeyListener.clear
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toolbar
 import com.google.android.material.appbar.MaterialToolbar
+import kotlin.system.exitProcess
 
 
 lateinit var skillsButton: Button
@@ -94,7 +99,11 @@ class resume : AppCompatActivity() {
 
 
 
+        toolbar.setNavigationOnClickListener{
 
+           finish()
+
+        }
         toolbar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.info -> {
@@ -118,6 +127,15 @@ class resume : AppCompatActivity() {
 
                     true
                 }
+                R.id.Logout -> {
+                    // Handle favorite icon press
+                    val sharedPreferences = getSharedPreferences("sharedPrefs", 0)
+                    sharedPreferences.edit().clear().commit()
+
+                    exitProcess(0)
+                    true
+                }
+
 
                 else -> false
             }

@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/drawable-v24/gradiant_overlay.xml" value="0.2005" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26" />
-        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_career.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_add_education.xml" value="0.33" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_add_experience.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_career.xml" value="0.33" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_education_card.xml" value="0.25" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_main.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_resume.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_skills.xml" value="0.36666666666666664" />
@@ -13,6 +16,7 @@
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_splash_screen.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/card_view_design.xml" value="0.25" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/experience_card.xml" value="0.33" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_education.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_experience.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_hobbies.xml" value="0.33" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_r_resume.xml" value="0.360054347826087" />
